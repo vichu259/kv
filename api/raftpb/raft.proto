@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package raftpb;
+option go_package = "github.com/vichu259/kv/raftpb";
+
+service RaftService {
+  rpc RequestVote(RequestVoteRequest) returns (RequestVoteResponse);
+  rpc AppendEntries(AppendEntriesRequest) returns (AppendEntriesResponse);
+  rpc Ping(PingRequest) returns (PingResponse);
+}
+
+message RequestVoteRequest {
+}
+
+message RequestVoteResponse {
+}
+
+message AppendEntriesRequest {
+}
+
+message AppendEntriesResponse {
+}
+
+message PingRequest {
+}
+
+message PingResponse { 
+  string message = 1;
+}

@@ -1,0 +1,1 @@
+ protoc --proto_path=api/raftpb --go_out=api/raftpb --go_opt=module=github.com/vichu259/kv/raftpb --go-grpc_out=api/raftpb --go-grpc_opt=module=github.com/vichu259/kv/raftpb api/raftpb/raft.proto
